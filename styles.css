@@ -1,0 +1,31 @@
+.container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5rem;
+}
+
+.wave {
+	width: 500px;
+	height: 500px;
+	/* background: linear-gradient(to bottom, transparent 0%, transparent 50%, lime 50%, lime 100%); */
+	border-radius: 150px;
+	position: absolute;
+	opacity: 0.5;
+}
+
+#dollar {
+	width: 400px;
+	/* z-index: 1000; */
+	/* border: 1px solid black; */
+	/* clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%); */
+}
+
+#dollar > path {
+	/* fill: #e43434; */
+	fill: linear-gradient(to bottom, transparent 0%, transparent 50%, lime 50%, lime 100%) !important;
+	background: linear-gradient(to bottom, transparent 0%, transparent 50%, lime 50%, lime 100%) !important;
+	color: linear-gradient(to bottom, transparent 0%, transparent 50%, lime 50%, lime 100%) !important;
+	/* outline: 1px solid black; */
+}
