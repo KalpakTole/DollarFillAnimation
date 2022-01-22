@@ -3,7 +3,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 5rem;
+	margin-top: 8rem;
+	background: lime;
 }
 
 .wave {
@@ -22,10 +23,27 @@
 	/* clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%); */
 }
 
-#dollar > path {
+.logo {
 	/* fill: #e43434; */
-	fill: linear-gradient(to bottom, transparent 0%, transparent 50%, lime 50%, lime 100%) !important;
-	background: linear-gradient(to bottom, transparent 0%, transparent 50%, lime 50%, lime 100%) !important;
-	color: linear-gradient(to bottom, transparent 0%, transparent 50%, lime 50%, lime 100%) !important;
+	/* fill: linear-gradient(to bottom, transparent 0%, transparent 50%, lime 50%, lime 100%) !important; */
+	/* background: linear-gradient(to bottom, transparent 0%, transparent 50%, lime 50%, lime 100%) !important; */
+	/* color: linear-gradient(to bottom, transparent 0%, transparent 50%, lime 50%, lime 100%) !important; */
 	/* outline: 1px solid black; */
+	fill: red;
+}
+
+.clip {
+	animation: slide 8s infinite;
+}
+
+@keyframes slide {
+	/* 0% {
+		transform: translateY(-40px);
+	} */
+	50% {
+		transform: translateY(50px);
+	}
+	100% {
+		transform: translateY(-50px);
+	}
 }
